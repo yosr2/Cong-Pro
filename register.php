@@ -69,6 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Inscription</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -90,6 +91,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             width: 100%;
             max-width: 600px;
         }
+        .logo {
+        width: 150px; 
+        position: relative;
+        left: 69% ;
+    }
         h1 {
             color: #343a40;
             font-weight: 700;
@@ -110,6 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <div class="container">
+    <img src="assets/logo.png" alt="Logo" class="logo">
         <h1>Inscription</h1>
         <form id="registrationForm" method="post" action="register.php">
             <div class="form-group">

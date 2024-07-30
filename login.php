@@ -57,6 +57,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             animation: fadeIn 1s ease-in-out;
             position: relative;
         }
+        .logo {
+        width: 150px; 
+        position: relative;
+        left: 69% ;
+    }
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -135,6 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <div class="container">
+    <img src="assets/logo.png" alt="Logo" class="logo">
         <h1>Connexion</h1>
         <?php if ($error_message): ?>
             <div class="alert-popup">
